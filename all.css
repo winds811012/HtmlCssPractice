@@ -39,14 +39,44 @@
 .menu ul li:hover {
   border-bottom: 5px solid #00cc99;
   cursor: pointer;
-  
 }
 
-.body .banner{
+.body .banner {
+  position: relative;
   height: 600px;
-/* background-color: #00cc99; */
   background-image: url("./img/banner.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  padding-top: 150px;
 }
 
+.banner .title {
+  text-align: left;
+  color: white;
+  font-family: "微軟正黑體";
+  font-size: 56px;
+  line-height: 1.5;
+  top: 200px;
+  padding:40px 20px;
+  background-color:rgba(30, 30,28, 0.4);
+}
+
+
+.footer{
+height: 120px;
+padding: 35px 35px;
+}
+.footer .logo{
+  float: left;
+}
+
+.footer .info{
+  float: right;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  line-height: 1.5;
+}
+.footer .info p{
+  display: inline;
+  color: rgba(229, 89, 149);
+}
