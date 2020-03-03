@@ -57,26 +57,37 @@
   font-size: 56px;
   line-height: 1.5;
   top: 200px;
-  padding:40px 20px;
-  background-color:rgba(30, 30,28, 0.4);
+  padding: 40px 20px;
+  background-color: rgba(30, 30, 28, 0.4);
 }
 
-
-.footer{
-height: 120px;
-padding: 35px 35px;
+.courseList li {
+  float: left;
+  border: 1px solid black;
+  height: 450px;
+  width: 400px;
+  margin: 0 80px;
 }
-.footer .logo{
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  height: 120px;
+  padding: 35px 35px;
+}
+.footer .logo {
   float: left;
 }
 
-.footer .info{
+.footer .info {
   float: right;
   font-family: "微軟正黑體";
   font-size: 20px;
   line-height: 1.5;
 }
-.footer .info p{
+.footer .info p {
   display: inline;
   color: rgba(229, 89, 149);
 }
