@@ -2,87 +2,93 @@ body {
   font-family: "微軟正黑體";
 }
 
-.header .bar {
+.header .topBar {
   background-color: #f6f6f6;
   height: 30px;
 }
 
-.header .bar ul {
+.header .topBar ul {
   float: right;
 }
-.header .bar ul li {
+.header .topBar ul li {
   margin-right: 10px;
   margin-top: 8px;
   float: left;
 }
-.header .bar img {
+.header .topBar img {
   float: left;
 }
 
-.header .bar span {
+.header .topBar span {
   float: left;
   margin-left: 5px;
 }
-.menu ul {
+
+.bottomBar ul {
   float: right;
 }
-.menu ul li {
+.bottomBar ul li {
   float: left;
   display: block;
   height: 50px;
   width: 100px;
   line-height: 50px;
   text-align: center;
-  font-family: "微軟正黑體";
   font-size: large;
   font-weight: 600;
   color: #00cc99;
+  box-sizing: border-box;
 }
-.menu ul li:hover {
+.bottomBar ul li:hover {
   border-bottom: 5px solid #00cc99;
   cursor: pointer;
 }
 
 .body .banner {
+  display: flex;
   position: relative;
-  height: 600px;
   background-image: url("./img/banner.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding-top: 150px;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
   box-sizing: border-box;
+  align-items: center;
+
+
 }
 
 .banner .title {
-  text-align: left;
+  position: absolute;
+  width: 100%;
   color: white;
-  font-family: "微軟正黑體";
-  font-size: 56px;
+  font-size: 5vw;
   line-height: 1.5;
-  top: 200px;
-  padding: 40px 20px;
   background-color: rgba(30, 30, 28, 0.4);
 }
 
+.courseList {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
 .courseList .block {
-  padding: 10px;
+  padding: 20px;
+  display: block;
+  width: 350px;
   float: left;
-  height: 450px;
-  margin: 80px 80px ;
-  width: 22%;
+  margin: 0 20px;
   box-sizing: border-box;
   box-shadow: rgb(214, 214, 214) 0 2px 4px 1px;
-  justify-content: center;
+  
 }
 .courseLogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.courseList{
-  display: flex;
-  flex-direction: row;
 }
 
 .courseContent {
@@ -93,9 +99,7 @@ body {
   font-size: 20px;
   font-family: "微軟正黑體";
 }
-.courseContent ul {
-  margin-left: 24px;
-}
+
 .courseContent .title {
   font-size: 24px;
   text-align: center;
@@ -129,25 +133,7 @@ body {
   color: #00cc99;
 }
 
-.footer {
-  height: 120px;
-  padding: 35px 35px;
-  box-sizing: border-box;
-}
-.footer .logo {
-  float: left;
-}
 
-.footer .info {
-  float: right;
-  font-family: "微軟正黑體";
-  font-size: 20px;
-  line-height: 1.5;
-}
-.footer .info p {
-  display: inline;
-  color: rgba(229, 89, 149);
-}
 .table {
   text-align: center;
   margin-top: 100px;
@@ -226,11 +212,31 @@ form label {
 .form .btn {
   background-color: rgb(0, 204, 153);
   color: white;
-  width: 15%;
+  width: 80px;
   height: 40px;
   padding: 5px;
   margin-top: 10px;
   float: right;
   border: 0;
   font-size: 20px;
+}
+
+.footer {
+  height: 120px;
+  padding: 35px 35px;
+  box-sizing: border-box;
+}
+.footer .logo {
+  float: left;
+}
+
+.footer .info {
+  float: right;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  line-height: 1.5;
+}
+.footer .info p {
+  display: inline;
+  color: rgba(229, 89, 149);
 }
